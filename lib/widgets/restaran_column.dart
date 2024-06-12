@@ -1,5 +1,3 @@
-
-
 import 'package:exam_3/models/restaurant_models.dart';
 import 'package:flutter/material.dart';
 import 'package:exam_3/services/restaurant_http_service.dart';
@@ -63,7 +61,7 @@ class RestaurantFutureBuilder2 extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            SizedBox(width: 60),
+                            SizedBox(width: 180.h),
                             Text(
                               "⭐️${restaurant.yulduz}",
                               style: TextStyle(

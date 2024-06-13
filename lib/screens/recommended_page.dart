@@ -69,33 +69,6 @@ class _RecommendedState extends State<Recommended> {
                 }
               },
             ),
-
-            // Padding(
-            //   padding: const EdgeInsets.all(15),
-            //   child: Row(
-            //     children: [
-            //       const Text(
-            //         'Recommended',
-            //         style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-            //       ),
-            //       Spacer(),
-            //       TextButton(
-            //         onPressed: () {
-            //           Navigator.pushReplacement(
-            //             context,
-            //             MaterialPageRoute(
-            //               builder: (context) => RecommendedV2(),
-            //             ),
-            //           );
-            //         },
-            //         child: const Text(
-            //           'View all',
-            //           style: TextStyle(fontSize: 24, color: Colors.grey),
-            //         ),
-            //       ),
-            //     ],
-            //   ),
-            // ),
             RestaurantFutureBuilder2(searchQuery: _searchQuery)
           ],
         ),
@@ -104,3 +77,4 @@ class _RecommendedState extends State<Recommended> {
     );
   }
 }
+

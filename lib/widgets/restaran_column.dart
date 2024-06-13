@@ -1,4 +1,5 @@
 import 'package:exam_3/models/restaurant_models.dart';
+
 import 'package:flutter/material.dart';
 import 'package:exam_3/services/restaurant_http_service.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -28,14 +29,17 @@ class RestaurantFutureBuilder2 extends StatelessWidget {
             child: Column(
               children: restaurants.map<Widget>((restaurant) {
                 return Padding(
-                  padding: const EdgeInsets.all(15),
+                  padding: EdgeInsets.all(15),
                   child: Column(
                     children: [
-                      InkWell(
-                        onTap: () {
-                          // Navigate to the details screen when the container is tapped
-                          Navigator.pushNamed(context, '/details',
-                              arguments: restaurant);
+                       InkWell(
+                        onTap: ()  {
+                          // Navigator.push(
+                          //   context,
+                          //   MaterialPageRoute(
+                          //     builder: (context) => FoodScreen(),
+                          //   ),
+                          // );
                         },
                         child: Container(
                           height: 150.h,
@@ -85,3 +89,4 @@ class RestaurantFutureBuilder2 extends StatelessWidget {
     );
   }
 }
+

@@ -17,17 +17,17 @@ class Restaurant {
       id: json['id'].toString(),
       name: json['name'],
       imageUrl: json['imageUrl'],
-      yulduz:json['yulduz'],
+      yulduz: json['yulduz'],
       foods: [json['foods']],
     );
   }
 
   Map<String, dynamic> toJson() {
     return {
-      'id': id,
+      'id': id,      
       'name': name,
       'imageUrl': imageUrl,
-      'yulduz':yulduz,
+      'yulduz': yulduz,
       'foods': foods,
     };
   }

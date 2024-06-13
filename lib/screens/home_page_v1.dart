@@ -22,7 +22,6 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     final CategoriesHttpServices categoriesHttpServices =
         CategoriesHttpServices();
-    
 
     return Scaffold(
       appBar: AppBar(
